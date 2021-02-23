@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-output';
+  countParent;
+  countChangedHandle(count: number){
+    this.countParent = count;
+  }
 }
